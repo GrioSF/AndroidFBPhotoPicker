@@ -231,7 +231,6 @@ containing a value of this type.
         public static int ic_launcher=0x7f02001f;
     }
     public static final class id {
-        public static int action_settings=0x7f04001f;
         public static int com_facebook_login_activity_progress_bar=0x7f040008;
         public static int com_facebook_picker_activity_circle=0x7f040007;
         public static int com_facebook_picker_checkbox=0x7f04000a;
@@ -282,11 +281,8 @@ containing a value of this type.
         public static int view_album_list_item=0x7f03000e;
         public static int view_photo_grid_item=0x7f03000f;
     }
-    public static final class menu {
-        public static int main=0x7f090000;
-    }
     public static final class string {
-        public static int action_settings=0x7f05001a;
+        public static int activity_title=0x7f05001a;
         public static int app_name=0x7f050019;
         public static int com_facebook_choose_friends=0x7f05000f;
         public static int com_facebook_dialogloginactivity_ok_button=0x7f050000;
@@ -313,9 +309,8 @@ containing a value of this type.
         public static int com_facebook_usersettingsfragment_log_in_button=0x7f050008;
         public static int com_facebook_usersettingsfragment_logged_in=0x7f050009;
         public static int com_facebook_usersettingsfragment_not_logged_in=0x7f05000a;
-        public static int hello_world=0x7f05001b;
-        public static int photo=0x7f05001d;
-        public static int photos=0x7f05001c;
+        public static int photo=0x7f05001c;
+        public static int photos=0x7f05001b;
     }
     public static final class style {
         /** 

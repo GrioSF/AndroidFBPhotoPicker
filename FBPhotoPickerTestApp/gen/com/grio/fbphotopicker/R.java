@@ -25,7 +25,6 @@ public final class R {
 		public static final int com_facebook_picker_row_activity_circle = 0x7f04000b;
 		public static final int com_facebook_usersettingsfragment_login_button = 0x7f04001c;
 		public static final int com_facebook_usersettingsfragment_logo_image = 0x7f04001a;
-		public static final int action_settings = 0x7f040021;
 		public static final int com_facebook_picker_checkbox = 0x7f04000c;
 		public static final int progress_overlay = 0x7f040005;
 		public static final int com_facebook_usersettingsfragment_profile_name = 0x7f04001b;
@@ -74,30 +73,26 @@ public final class R {
 		public static final int com_facebook_nearby = 0x7f050010;
 		public static final int com_facebook_requesterror_permissions = 0x7f050018;
 		public static final int com_facebook_placepicker_subtitle_catetory_only_format = 0x7f05000c;
-		public static final int hello_world = 0x7f05001b;
 		public static final int com_facebook_usersettingsfragment_logged_in = 0x7f050009;
 		public static final int com_facebook_loginview_log_in_button = 0x7f050002;
 		public static final int com_facebook_choose_friends = 0x7f05000f;
-		public static final int action_settings = 0x7f05001a;
 		public static final int com_facebook_placepicker_subtitle_format = 0x7f05000b;
 		public static final int com_facebook_loginview_logged_in_as = 0x7f050003;
 		public static final int com_facebook_requesterror_web_login = 0x7f050014;
 		public static final int com_facebook_usersettingsfragment_not_logged_in = 0x7f05000a;
 		public static final int com_facebook_loginview_log_out_action = 0x7f050005;
 		public static final int com_facebook_requesterror_reconnect = 0x7f050017;
-		public static final int photo = 0x7f05001d;
-		public static final int photos = 0x7f05001c;
+		public static final int photo = 0x7f05001c;
+		public static final int photos = 0x7f05001b;
 		public static final int com_facebook_internet_permission_error_message = 0x7f050013;
 		public static final int com_facebook_internet_permission_error_title = 0x7f050012;
 		public static final int com_facebook_requesterror_password_changed = 0x7f050016;
+		public static final int activity_title = 0x7f05001a;
 		public static final int com_facebook_logo_content_description = 0x7f050007;
 		public static final int com_facebook_usersettingsfragment_log_in_button = 0x7f050008;
 		public static final int com_facebook_loading = 0x7f050011;
 		public static final int com_facebook_loginview_cancel_action = 0x7f050006;
 		public static final int com_facebook_picker_done_button_text = 0x7f05000e;
-	}
-	public static final class menu {
-		public static final int main = 0x7f090000;
 	}
 	public static final class layout {
 		public static final int view_photo_grid_item = 0x7f030010;

@@ -29,6 +29,7 @@ import com.facebook.Request.Callback;
 import com.facebook.Response;
 import com.facebook.Session;
 
+@SuppressLint("NewApi")
 public class FBPhotoPickerActivity extends Activity {
 
     public static final String PHOTO_ID = "photoId";
@@ -48,6 +49,10 @@ public class FBPhotoPickerActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
 
         setContentView(R.layout.activity_fb_photo_picker);
+        
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+            if (getActionBar() != null)
+                getActionBar().setTitle(R.string.activity_title);
 
         mContext = this;
 
@@ -105,7 +110,6 @@ public class FBPhotoPickerActivity extends Activity {
                         mAlbumsList.setAdapter(new FBAlbumArrayAdapter(mContext, 0, fbAlbums));
                         mAlbumsList.setOnItemClickListener(new OnItemClickListener() {
 
-                            @SuppressLint("NewApi")
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
@@ -114,11 +118,14 @@ public class FBPhotoPickerActivity extends Activity {
                                 mPhotosGrid
                                         .setAdapter(new FBPhotoArrayAdapter(mContext, 0, mPhotos));
                                 // TODO: check for API Level before animating
-                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1)
                                     mAlbumsList.animate().x(-mAlbumsList.getWidth());
                                 else
                                     mAlbumsList.setVisibility(View.GONE);
                                 mPhotoGridVisible = true;
+                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+                                    if (getActionBar() != null)
+                                        getActionBar().setTitle(fbAlbums.get(position).getName());
                             }
 
                         });
@@ -181,6 +188,11 @@ public class FBPhotoPickerActivity extends Activity {
                 mAlbumsList.animate().x(0);
             else
                 mAlbumsList.setVisibility(View.VISIBLE);
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+                if (getActionBar() != null)
+                    getActionBar().setTitle(R.string.activity_title);
+
             mPhotoGridVisible = false;
         } else {
             finish();

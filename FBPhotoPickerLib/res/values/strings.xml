@@ -2,8 +2,7 @@
 <resources>
 
     <string name="app_name">FBPhotoPicker</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="activity_title">Facebook Albums</string>
     <string name="photos">Photos</string>
     <string name="photo">Photo</string>
 </resources>

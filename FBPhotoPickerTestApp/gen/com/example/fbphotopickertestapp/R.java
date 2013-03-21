@@ -294,7 +294,8 @@ containing a value of this type.
         public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f05001a;
+        public static final int action_settings=0x7f05001d;
+        public static final int activity_title=0x7f05001a;
         public static final int app_name=0x7f050019;
         public static final int com_facebook_choose_friends=0x7f05000f;
         public static final int com_facebook_dialogloginactivity_ok_button=0x7f050000;
@@ -321,10 +322,10 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_log_in_button=0x7f050008;
         public static final int com_facebook_usersettingsfragment_logged_in=0x7f050009;
         public static final int com_facebook_usersettingsfragment_not_logged_in=0x7f05000a;
-        public static final int fb_app_id=0x7f05001e;
-        public static final int hello_world=0x7f05001b;
-        public static final int photo=0x7f05001d;
-        public static final int photos=0x7f05001c;
+        public static final int fb_app_id=0x7f05001f;
+        public static final int hello_world=0x7f05001e;
+        public static final int photo=0x7f05001c;
+        public static final int photos=0x7f05001b;
     }
     public static final class style {
         /** 
