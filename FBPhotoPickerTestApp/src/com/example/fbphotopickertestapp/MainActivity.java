@@ -21,6 +21,7 @@ public class MainActivity extends Activity {
     private LoginButton mLoginButton;
     private ImageView mImageView;
     private UiLifecycleHelper mUiLifecycleHelper;
+    private static boolean mInit = true;
     
     Session.StatusCallback mCallback = new Session.StatusCallback() {
         @Override
@@ -52,9 +53,12 @@ public class MainActivity extends Activity {
         mUiLifecycleHelper.onCreate(savedInstanceState);
         
         if (Session.getActiveSession() != null && Session.getActiveSession().isOpened()) {
-            showFBPhotoPicker();
+            if (MainActivity.mInit) {
+                 showFBPhotoPicker();
+                MainActivity.mInit = false;
+            }
             mLoginButton.setVisibility(View.GONE);
-        }
+         }
     }
 
     @Override
